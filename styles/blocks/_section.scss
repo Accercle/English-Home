@@ -1,0 +1,13 @@
+.section {
+    &__container {
+        padding: var(--container-padding);
+
+        @include tablet {
+            padding: 60px;
+        }
+
+        @include mobile {
+            padding: 40px;
+        }
+    }
+}

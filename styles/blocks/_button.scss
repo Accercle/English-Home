@@ -1,0 +1,6 @@
+.button {
+    &--transparent {
+        color: var(--color-accent);
+        background-color: transparent;
+    }
+}

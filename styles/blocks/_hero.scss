@@ -1,0 +1,59 @@
+.hero {
+    position: relative;
+    z-index: 3;
+
+    &__body {
+        height: 772px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        width: 295px;
+        font-size: 64px;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        @include tablet {
+            font-size: 48px;
+        }
+
+        @include mobile {
+            width: 170px;
+            font-size: 36px;
+        }
+
+
+    }
+
+    &__description {
+        width: 850px;
+        padding-top: 85px;
+        align-self: end;
+        font-size: 36px;
+        font-weight: 500;
+
+        @include tablet {
+            max-width: 600px;
+            padding-top: 65px;
+            font-size: 24px;
+        }
+
+        @include mobile {
+            width: 290px;
+            padding-top: 45px;
+            font-size: 16px;
+        }
+    }
+
+    &__slogan {
+        position: absolute;
+        bottom: 0;
+        width: 225px;
+
+        @include tablet {
+            bottom: 30%;
+            font-size: 14px;
+        }
+    }
+}

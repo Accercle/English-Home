@@ -1,0 +1,50 @@
+.footer {
+    &__container {
+        padding: var(--container-padding);
+
+        @include mobile {
+            padding: 25px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: var(--color-dark);
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__menu {
+        &-list {
+            display: flex;
+            column-gap: 40px;
+
+            @include mobile {
+                flex-direction: column;
+            }
+        }
+
+        &-link {
+            height: 40px;
+            
+            @include hover-link
+        }
+
+        &-list-info {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            margin-top: 40px;
+
+            &__link {
+                height: 40px;
+
+                @include hover-link
+            }
+        }
+    }
+}
