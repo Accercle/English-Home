@@ -1,0 +1,33 @@
+@mixin hover-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    @include hover {
+        color: var(--color-accent);
+        &::after {
+            width: 100%;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        translate: -50%;
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        transition-duration: inherit;
+    }
+}
+
+@mixin resen-link {
+    color: inherit;
+    
+    &,
+    &:hover {
+        text-decoration: none;
+    }
+}

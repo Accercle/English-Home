@@ -1,0 +1,47 @@
+html, 
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.main {
+    background: linear-gradient(to bottom right, var(--color-light-gray), var(--color-dark-gray));
+    animation: 
+        background-light 2s infinite normal,
+        background-dark 2s infinite normal;
+    ;
+}
+
+@keyframes background-light {
+    50% {
+        background-position: 0 700px;
+    }
+}
+
+@keyframes background-dark {
+    10% {
+        background-position: 0 100px;
+    }
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
