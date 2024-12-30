@@ -45,3 +45,21 @@ body {
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
 }
+
+.hidden-desktop {
+    @media (min-width: 768px) {
+        display: none !important;
+    }
+}
+
+.hidden-mobile {
+    @media (max-width:767px) {
+        display: none !important;
+    } 
+}
+
+.visible-mobile {
+    @media (max-width:768px) {
+        display: block;
+    }
+}
