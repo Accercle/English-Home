@@ -1,0 +1,28 @@
+.mobile-overlay {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 14px 8px;
+    border: none;
+    background: var(--color-dark);
+    color: var(--color-light-text);
+
+    &:modal {
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+
+    &__close-button-wrapper {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 30px;
+        min-height: 80vh;
+    }
+}
