@@ -35,9 +35,41 @@
                         </li>
                     </ul> 
                 </nav>
+                <button 
+                    class="hidden-desktop visible-mobile button__burger-button burger-button"
+                    type="button"
+                    onclick="mobileOverlay.showModal()">
+                    <span class="visually-hidden">Open navigation menu</span>
+                </button>
             </div>
         </header>
 
+        <dialog class="mobile-overlay hidden-desktop" id="mobileOverlay">
+            <form class="mobile-overlay__close-button-wrapper" method="dialog">
+                <button 
+                    class="mobile-overlay__close-button cross-button"
+                    type="submit"
+                >
+                    <span class="visually-hidden">Close navigation menu</span>
+                </button>
+            </form>
+            <div class="mobile-overlay__body">
+                <ul class="mobile-overlay__list">
+                    <li class="mobile-overlay__item">
+                        <a href="" class="mobile-overlay__link">Грамматика</a>
+                    </li>
+                    <li class="mobile-overlay__item">
+                        <a href="" class="mobile-overlay__link">Аудирование</a>
+                    </li>
+                    <li class="mobile-overlay__item">
+                        <a href="" class="mobile-overlay__link">Лайфхаки</a>
+                    </li>
+                    <li class="mobile-overlay__item">
+                        <a href="" class="mobile-overlay__link">Сторонние ресурсы</a>
+                    </li>
+                </ul>
+            </div>
+        </dialog>
     </div>
 
 

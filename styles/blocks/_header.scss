@@ -1,0 +1,34 @@
+.header {
+    max-width: 100%;
+    padding-inline: var(--container-padding);
+    background: var(--color-dark);
+    position: relative;
+    z-index: 3;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        @include hover {
+            color: var(--color-accent);
+        }
+    }
+
+    &__menu {
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 40px;
+        }
+
+        &-link {
+            height: 40px;
+
+            @include hover-link
+        }
+    }
+}
