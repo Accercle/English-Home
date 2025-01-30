@@ -2,9 +2,9 @@
   --color-dark: #000000;
   --color-dark-text: #09160C;
   --color-light-text: #B7B7B7;
-  --color-light-gray: #8B8B8B;
   --color-dark-gray: #2B2B2B;
   --color-accent: #E7AA53;
+  --bg-color: #161616;
   --border: 2px solid var(--color-dark);
   --border-radius: 50%;
   --shadow: 8 8 15 10 rgba(0, 0, 0, 0.2)
@@ -176,6 +176,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: var(--bg-color);
 }
 
 .content {
@@ -184,34 +185,6 @@ body {
           flex-grow: 1;
 }
 
-.main {
-  background: -webkit-gradient(linear, left top, right bottom, from(var(--color-light-gray)), to(var(--color-dark-gray)));
-  background: linear-gradient(to bottom right, var(--color-light-gray), var(--color-dark-gray));
-  -webkit-animation: background-light 2s infinite normal, background-dark 2s infinite normal;
-          animation: background-light 2s infinite normal, background-dark 2s infinite normal;
-}
-
-@-webkit-keyframes background-light {
-  50% {
-    background-position: 0 700px;
-  }
-}
-
-@keyframes background-light {
-  50% {
-    background-position: 0 700px;
-  }
-}
-@-webkit-keyframes background-dark {
-  10% {
-    background-position: 0 100px;
-  }
-}
-@keyframes background-dark {
-  10% {
-    background-position: 0 100px;
-  }
-}
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
