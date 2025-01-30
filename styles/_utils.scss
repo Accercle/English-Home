@@ -7,30 +7,11 @@ body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: var(--bg-color);
 }
 
 .content {
     flex-grow: 1;
-}
-
-.main {
-    background: linear-gradient(to bottom right, var(--color-light-gray), var(--color-dark-gray));
-    animation: 
-        background-light 2s infinite normal,
-        background-dark 2s infinite normal;
-    ;
-}
-
-@keyframes background-light {
-    50% {
-        background-position: 0 700px;
-    }
-}
-
-@keyframes background-dark {
-    10% {
-        background-position: 0 100px;
-    }
 }
 
 .visually-hidden {
